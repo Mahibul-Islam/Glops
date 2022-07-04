@@ -1,0 +1,391 @@
+/* global style start */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+    line-height: 1.8;
+    color: #898fa1;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+    overflow-x: hidden;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #11245A;
+}
+
+img {
+    width: 100%;
+}
+
+.title-sm {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+a {
+    font-weight: 700;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+
+/* global style end */
+
+
+/* navbar start here */
+
+.logo-text {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white !important;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: antiquewhite !important;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../img/download.png");
+}
+
+.home {
+    margin-top: 10px !important;
+}
+
+.Services {
+    margin-top: 10px !important;
+}
+
+.Portfolio {
+    margin-top: 10px !important;
+}
+
+.Features {
+    margin-top: 10px !important;
+}
+
+.team {
+    margin-top: 10px !important;
+}
+
+.Testimonials {
+    margin-top: 10px !important;
+}
+
+.Contact {
+    margin-top: 10px !important;
+}
+
+
+/* navabr end here */
+
+
+/* home start here */
+
+#home {
+    background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url(../img/H.jfif);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#home h1 {
+    font-weight: 700;
+}
+
+#home p {
+    max-width: 550px;
+    margin: 18px auto;
+    text-align: justify;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    border-radius: 0px;
+}
+
+.btn-brand {
+    background-color: rgb(0, 106, 255);
+    ;
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: rgb(0, 0, 255);
+    color: #fff;
+}
+
+
+/* home section end here */
+
+
+/* services section start here */
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-intro .hline {
+    width: 280px;
+    height: 5px;
+    background-color: rgb(0, 106, 255);
+    margin: 16px auto 0 auto;
+    border-radius: 20px;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 106, 255);
+    color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex: none;
+}
+
+
+/* services section end here */
+
+
+/* portfolio section start here */
+
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img,
+.portfolio-item .portfolio-overlay {
+    transition: all 0.4s ease;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 36, 90, 0.9);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+}
+
+.portfolio-overlay h3,
+.portfolio-overlay h6 {
+    color: #fff;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* portfolio section end here */
+
+
+/* features section start here */
+
+.feature .icon-box {
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+
+/* featues section end here */
+
+
+/* team section start here */
+
+.team-member {
+    background-color: #11245A;
+}
+
+.team-member.even {
+    background-color: #162e6e;
+}
+
+.team-member .hline {
+    width: 70px;
+    height: 2px;
+    margin: 16px auto;
+    background-color: rgba(255, 255, 255, 0.445);
+}
+
+.team-member .team-member-img img,
+.team-member .team-member-img .social-icons {
+    transition: all 0.4s ease;
+}
+
+.team-member .team-member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member .team-member-img .social-icons {
+    width: 100%;
+    height: 60px;
+    background-color: #E93B81;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member .team-member-img .social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    color: #fff;
+    border-radius: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.team-member:hover .team-member-img .social-icons {
+    bottom: 0;
+}
+
+.team-member:hover img {
+    transform: translateY(-60px);
+}
+
+
+/* team section end here */
+
+
+/* testmonial section start here */
+
+#testimonials img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    transition: all 0.4s ease;
+}
+
+#testimonials .nav-pills .nav-link {
+    background-color: transparent;
+}
+
+#testimonials .nav-pills .nav-link.active img {
+    transform: scale(1.3);
+}
+
+.review .stars {
+    color: #E93B81;
+}
+
+.review p {
+    max-width: 720px;
+    margin: 24px auto;
+    font-style: italic;
+}
+
+
+/* test monial section end here */
+
+
+/* social section start here */
+
+#social img {
+    height: 35px;
+}
+
+
+/* social section end here */
+
+
+/* contact section start here */
+
+form .form-control {
+    border-radius: 0;
+}
+
+form .form-control:focus {
+    box-shadow: none;
+    border-color: #0D6EFD;
+}
+
+#sarategy {
+    background-color: #0D6EFD;
+}
+
+
+/* contact section end here */
+
+
+/* footer section start here */
+
+.footer-top {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+footer .footer-links a,
+footer .social-icons a {
+    color: #898fa1;
+}
+
+footer .social-icons a {
+    font-size: 24px;
+}
+
+footer .footer-links a {
+    display: block;
+    font-weight: 400;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* footer section end here */
